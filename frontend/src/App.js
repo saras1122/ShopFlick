@@ -16,9 +16,7 @@ function App() {
   const fetchUserDetails = async () => {
     const dataResponse = await fetch(SummaryApi.current_user.url, {
       method: SummaryApi.current_user.method,
-      credentials: 'include', headers: {
-        "content-type": "application/json"
-      },
+      credentials: 'include'
     })
 
     const dataApi = await dataResponse.json()
