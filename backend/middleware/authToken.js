@@ -5,13 +5,13 @@ async function authToken(req, res, next) {
     try {
         const token =  req.cookies?.token
         console.log("gdgd"+req.cookies)
-        console.log(token)
-        if(req.cookies){
-            res.status(200).json({
-                message:"lo"
-            })
-        }
-        if(!req.cookies){
+        // console.log(token)
+        // if(req.cookies){
+        //     res.status(200).json({
+        //         message:"lo"
+        //     })
+        // }
+        if(!token){
             return res.status(200).json({
                 message : "Please Login...!",
                 error : true,
