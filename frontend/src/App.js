@@ -16,7 +16,9 @@ function App() {
   const fetchUserDetails = async () => {
     const dataResponse = await fetch(SummaryApi.current_user.url, {
       method: SummaryApi.current_user.method,
-      credentials: 'include'
+      credentials: 'include', headers: {
+        "content-type": "application/json"
+      },
     })
 
     const dataApi = await dataResponse.json()
@@ -37,11 +39,11 @@ function App() {
         <ToastContainer
           position='top-center'
         />
-        <Header/>
+        <Header />
         <main className='min-h-[calc(100vh-0px)] pt-16'>
           <Outlet />
         </main>
-        <br/>
+        <br />
         <Footer />
       </Context.Provider>
     </>
