@@ -6,6 +6,11 @@ async function authToken(req, res, next) {
         const token =  req.cookies?.token
         console.log("gdgd"+req.cookies)
         console.log(token)
+        if(req.cookies){
+            res.status(200).json({
+                message:"lo"
+            })
+        }
         if(!req.cookies){
             return res.status(200).json({
                 message : "Please Login...!",
