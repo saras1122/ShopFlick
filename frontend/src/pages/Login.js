@@ -8,49 +8,6 @@ import { toast } from 'react-toastify';
 import Context from '../context';
 
 const Login = () => {
-    // const navigate = useNavigate()
-    // const [showPassword, setShowPassword] = useState(false);
-    // const [data, setData] = useState({
-    //     email: "", password: ""
-    // });
-    // const pass = (prev) => {
-    //     setShowPassword(!showPassword);
-    // }
-    // const handleOnChange = (e) => {
-    //     const { name, value } = e.target
-
-    //     setData((preve) => {
-    //         return {
-    //             ...preve,
-    //             [name]: value
-    //         }
-    //     })
-    // }
-
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault()
-
-    //     const dataResponse = await fetch(SummaryApi.signIn.url, {
-    //         method: SummaryApi.signIn.method,
-    //         credentials: 'include',
-    //         headers: {
-    //             "content-type": "application/json"
-    //         },
-    //         body: JSON.stringify(data)
-    //     })
-
-    //     const dataApi = await dataResponse.json()
-
-    //     if (dataApi.success) {
-    //         toast.success(dataApi.message)
-    //         navigate('/')
-    //     }
-
-    //     if (dataApi.error) {
-    //         toast.error(dataApi.message)
-    //     }
-
-    // }
     const [showPassword, setShowPassword] = useState(false)
     const [data, setData] = useState({
         email: "",
