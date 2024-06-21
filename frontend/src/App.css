@@ -1,0 +1,69 @@
+.customShadow1{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.customShadow{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.userTable{
+  @apply bg-white
+}
+.userTable th{
+  @apply border text-base font-medium
+}
+
+.userTable td{
+  @apply border text-base text-center
+}
+
+/**scrollbar hidden****/
+.scrollbar-none::-webkit-scrollbar{
+  display: none;
+}
+.custom-gray {
+  color: #C5C4C5;
+}
+.customcolor{
+  background-color: #F7F8FA;
+}
+/* .custom-strong-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23);
+} */
+.custom-strong-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-strong-shadow:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.customNav{
+  background-color: blueviolet;
+}
+
+.hover-style:hover {
+  background-color: #E6990B;
+  color: black;
+}
+.hover-style {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hover-style1 {
+  transition: background-color 0.3s, color 0.3s;
+}
+.hover-style2:hover {
+  background-color: #E6990B;
+  color: black;
+  border-color: #E6990B;
+}
+.hover-style2 {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hover-style3:hover {
+  color: #E6990B;
+}
+.hover-style3 {
+  transition: color 0.3s, color 0.3s;
+}

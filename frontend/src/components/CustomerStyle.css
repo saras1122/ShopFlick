@@ -1,0 +1,76 @@
+.customer {
+    position: relative;
+    text-align: center;
+}
+
+.customer .background img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.customer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4.5%; /* Adjust padding for responsiveness */
+    box-sizing: border-box;
+}
+
+.customer .overlay .top-left {
+    width: 40%; /* Adjust width as needed */
+    height: 100%;/* Ensure container height matches image height */
+    position: relative; /* Ensure proper positioning context */
+}
+
+.customer .overlay .top-left img {
+    max-width: 100%; /* Ensure image stays within container */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position image within its container */
+    top: 0; /* Adjust positioning if necessary */
+    left: 10%; /* Adjust positioning if necessary */
+}
+
+.customer .overlay .top-right {
+    text-align: left;
+    color: white;
+    width: 50%; /* Adjust width as needed */
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 1%; /* Adjust padding as needed */
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
+.over{/* Prevent wrapping */
+   /* Prevent wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 768px) {
+    .customer .overlay {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 5% 5%; /* Adjust padding as needed */
+    }
+
+    .customer .overlay .top-left {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Allow container height to adjust */
+    }
+
+    .customer .overlay .top-left img {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        position: static; /* Reset positioning for mobile */
+    }
+
+    .customer .overlay .top-right {
+        width: 100%;
+        text-align: center; /* Center align text on smaller screens */
+    }
+}
