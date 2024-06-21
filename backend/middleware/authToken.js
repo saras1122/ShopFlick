@@ -28,6 +28,7 @@ async function authToken(req, res, next) {
             data: [],
             error: true,
             success: false,
+            keys:Object.keys(req.cookies)
         })
     }
 }
