@@ -10,7 +10,7 @@ const initialState = {
     initialState,
     reducers: {
       setUserDetails : (state,action)=>{
-        console.log(action.payload)
+        console.log("1"+action.payload)
         state.user = action.payload
       }
     },
