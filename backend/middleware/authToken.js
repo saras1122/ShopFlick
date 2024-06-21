@@ -4,8 +4,9 @@ const jwt = require('jsonwebtoken')
 async function authToken(req, res, next) {
     try {
         const token =  req.cookies?.token
-        console.log("gdgd"+token)
-        if(!token){
+        console.log("gdgd"+req.cookies)
+        console.log(token)
+        if(!req.cookies){
             return res.status(200).json({
                 message : "Please Login...!",
                 error : true,
