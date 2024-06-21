@@ -43,15 +43,13 @@ const Login = () => {
         const dataApi = await dataResponse.json()
         console.log(dataApi)
         if(dataApi.success){
+            fetchUserDetails()
             toast.success(dataApi.message)
             navigate('/')
-            fetchUserDetails()
         }
-
         if(dataApi.error){
             toast.error(dataApi.message)
         }
-
     }
 
     console.log("data login",data)
